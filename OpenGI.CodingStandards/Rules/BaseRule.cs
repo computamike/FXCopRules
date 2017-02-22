@@ -9,7 +9,7 @@ namespace OpenGI.CodingStandards
     public abstract class BaseRule : BaseIntrospectionRule
     {
         protected BaseRule(string name)
-            : base(
+            : base(     
                   name,"OpenGI.CodingStandards.Rules",
                   typeof(BaseRule).Assembly)
         {

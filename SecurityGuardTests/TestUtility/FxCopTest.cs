@@ -36,7 +36,7 @@ namespace SecurityGuard.Tests
 
 
             string targetBinary = secGuardHome + getDllPath("SecurityGuardSamples");
-            string ruleFile = secGuardHome + getDllPath("SecurityGuardPlugin");
+            string ruleFile = secGuardHome + getDllPath("OpenGI.CodingStandards");
             string tempReportFile = System.IO.Path.GetTempPath() + "find-sec-guard" + Guid.NewGuid().ToString() + ".xml";
 
             Console.WriteLine("== Configuration ==");
