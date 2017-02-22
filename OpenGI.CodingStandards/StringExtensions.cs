@@ -8,6 +8,7 @@ namespace OpenGI.CodingStandards
 {
     public static class StringExtensions
     {
+
         public static string ToPascalstring(this string stringToPascalise)
         {
             // For namesapces, we split by '.'
@@ -23,6 +24,10 @@ namespace OpenGI.CodingStandards
             
              
         }
+
+
+
+
 
         public static string ToCamelString(this string stringToCamelise)
         {
