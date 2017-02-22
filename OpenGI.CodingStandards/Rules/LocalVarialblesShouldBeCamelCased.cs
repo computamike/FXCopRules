@@ -23,28 +23,26 @@ namespace OpenGI.CodingStandards.Rules
             
             if (method.Instructions == null || method.Instructions.Count  == 0)
                 return null;
-
+            LocalCollection locals = method.Locals;
             //LocalList locals = method.Instructions[0].Value as LocalList;
 
-            //if (locals == null)
-            //    return null;
+            if (locals == null)
+                return null;
 
-            //for (int i = 0; i < locals.Length; i++)
-            //{
-            //    Local local = locals[i];
 
-            //    if (local.Type != SystemTypes.Boolean)
-            //        continue;
+            foreach (var item in locals)
+            {
+                if (RuleUtilities.IsCompilerGenerated(item)) 
+                    continue;
+                string localVariableName = item.Name.Name;
+                string camelLocalVariableName = localVariableName.ToCamelString();
+                if (!item.Name.Name.Equals(camelLocalVariableName))
+                {
+                    this.Problems.Add(new Problem(this.GetResolution(), item.SourceContext));
+                }
 
-            //    if (RuleUtilities.IsCompilerGenerated(local))
-            //        continue;
-
-            //    if (local.Name.Name.StartsWith("b"))
-            //        continue;
-
-            //    base.Problems.Add(new Problem(base.GetResolution(local.Name.Name), local));
-            //}
-
+            }
+             
             return Problems;
         }
 
