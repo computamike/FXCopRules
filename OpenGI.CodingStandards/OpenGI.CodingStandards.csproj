@@ -63,9 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Rules\FieldsMustBePrefixedWith_AndBeCamelCased.cs" />
     <Compile Include="Rules\InterfacesShouldBePascalCasedWithLeadingI.cs" />
     <Compile Include="Rules\ClassNamesShouldBePascalCased.cs" />
     <Compile Include="Rules\LocalVarialblesShouldBeCamelCased.cs" />
+    <Compile Include="Rules\PropertyNamesShouldbePascalCased.cs" />
     <Compile Include="Rules\MethodParametersShouldbeCamelCased.cs" />
     <Compile Include="Rules\MethodNamesShouldbePascalCased.cs" />
     <Compile Include="Rules\NamespaceShouldBeginOpenGIRule .cs" />

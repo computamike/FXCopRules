@@ -70,6 +70,18 @@
   </Rule>
   
   
+    <Rule TypeName="InterfacesShouldBePascalCasedWithLeadingI" Category="OpenGI.Namingstandards" CheckId="OGI006">
+    <Name>Interfaces should start with 'I' and be pascal cased.</Name>
+    <Description>Case is wrong case - correct this.</Description>
+    <Url/>
+    <Resolution>Method params should be Camel Cased.</Resolution>
+    <MessageLevel Certainty="90">Warning</MessageLevel>
+    <FixCategories>Breaking</FixCategories>
+    <Email />
+    <Owner />
+    </Rule>
+  
+  
   <!-- 
   Notes for developers : 
   A Rule element can contain:
