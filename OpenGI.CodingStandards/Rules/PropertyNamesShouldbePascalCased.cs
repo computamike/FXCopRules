@@ -16,7 +16,7 @@ namespace OpenGI.CodingStandards.Rules
         public override ProblemCollection Check(Member member)
         {
             PropertyNode meth = member as PropertyNode;
-            if (meth != null &&  meth.NodeType != NodeType.InstanceInitializer)
+            if (meth != null  && meth.NodeType != NodeType.InstanceInitializer)
             {
                 string pascalMethodName = meth.Name.Name.ToPascalstring();
                 if (!meth.Name.Name.Equals(pascalMethodName))

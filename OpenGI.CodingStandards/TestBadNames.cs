@@ -15,14 +15,25 @@ namespace openGI.CodingStandards
     }
 }
 
-namespace badNameSpace
+namespace thisNameSpaceViolatesOGI001_OGI002
 {
-    public class testBadNames
+    public class thisClassViolatesOGI006
     {
+        public int thisPropertyViolatesOGI008 { get; set; }
+        private string ThisPropertyViolatesOGI009;
         
-        public void thisIsABadName(string ThisIsBAd)
+        public void thismethodViolatesOGI003(string ThisMethodParameterViolatesOGI004)
         {
-            string ThisIsABadVariable = "";
+            string ThisVariableViolatesOGI005 = "";
         }
+    }
+}
+
+namespace OpenGI.OpenTrader
+{
+
+    public interface ithisInterfaceViolatesOGI007
+    {
+        string doStuff();
     }
 }

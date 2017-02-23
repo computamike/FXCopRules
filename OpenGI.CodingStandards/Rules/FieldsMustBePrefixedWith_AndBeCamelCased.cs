@@ -24,7 +24,7 @@ namespace OpenGI.CodingStandards.Rules
             if (fld == null)
                 return this.Problems;
 
-            if (!fld.IsStatic &&  !fld.Name.Name.StartsWith("_", StringComparison.Ordinal) && !fld.IsCompilerControlled )
+            if (!fld.IsStatic &&  !fld.IsCompilerControlled && !fld.Name.Name.StartsWith("_", StringComparison.Ordinal) && !fld.IsCompilerControlled )
             {
                 this.Problems.Add(new Problem(this.GetNamedResolution("Instance", fld.Name.Name)));
             }

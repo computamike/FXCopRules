@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Rules FriendlyName="Security Guard">
+
   <Rule TypeName="NameSpaceIsPascalRule" Category="OpenGI.Namingstandards" CheckId="OGI001">
     <Name>Namespaces should be Pascal Cased</Name>
-    <Description>namespace is wrong case - correct this.</Description>
+    <Description>OpenGI Coding standards states that Namespaces should be Pascal Cased.</Description>
     <Url/>
-    <Resolution>namespace wrong case.</Resolution>
-    <MessageLevel Certainty="95">Warning</MessageLevel>
+    <Resolution>Alter the casing of the namespace to conform to the coding standards.</Resolution>
+    <MessageLevel Certainty="80">Warning</MessageLevel>
     <FixCategories>Breaking</FixCategories>
     <Email />
     <Owner />
@@ -13,9 +14,9 @@
 
   <Rule TypeName="NamespaceShouldBeginOGIRule" Category="OpenGI.Namingstandards" CheckId="OGI002">
     <Name>Namespaces should start OpenGI.OpenTrader</Name>
-    <Description>namespace is wrong case - correct this.</Description>
+    <Description>Open GI Coding standards state that namespaces should start "OpenGI.OpenTrader".</Description>
     <Url/>
-    <Resolution>Namespaces for OpenGI based products should start OpenGI.OpenTrader.</Resolution>
+    <Resolution>Alter namespace to start OpenGI.OpenTrader</Resolution>
     <MessageLevel Certainty="95">Warning</MessageLevel>
     <FixCategories>Breaking</FixCategories>
     <Email />
@@ -24,64 +25,81 @@
 
   <Rule TypeName="MethodNamesShouldBePascalCased" Category="OpenGI.Namingstandards" CheckId="OGI003">
     <Name>Method names should be Pascal Cased</Name>
-    <Description>Case is wrong case - correct this.</Description>
+    <Description>Open GI Coding standards state that method names should be Pascal Cased.</Description>
     <Url/>
-    <Resolution>Method names should be Pascal Cased.</Resolution>
+    <Resolution>Alter the name of the method to be Pascal Cased.</Resolution>
     <MessageLevel Certainty="95">Warning</MessageLevel>
     <FixCategories>Breaking</FixCategories>
     <Email />
     <Owner />
   </Rule>
 
-
   <Rule TypeName="MethodParametersShouldBeCamelCased" Category="OpenGI.Namingstandards" CheckId="OGI004">
-    <Name>Method params should be camel Cased</Name>
-    <Description>Case is wrong case - correct this.</Description>
+    <Name>Method parameters should be Camel Cased</Name>
+    <Description>Open GI Coding standards state that method parameters should be camel Cased.</Description>
     <Url/>
-    <Resolution>Method params should be Camel Cased.</Resolution>
+    <Resolution>Alter the casing of the affected method property to be camel Case.</Resolution>
     <MessageLevel Certainty="50">Warning</MessageLevel>
     <FixCategories>NonBreaking</FixCategories>
     <Email />
     <Owner />
   </Rule>
-
   
   <Rule TypeName="LocalVarialblesShouldBeCamelCased" Category="OpenGI.Namingstandards" CheckId="OGI005">
-    <Name>Method params should be camel Cased</Name>
-    <Description>Case is wrong case - correct this.</Description>
+    <Name>Local variables should be Camel Cased.</Name>
+    <Description>Open GI coding standards state that local variables should be camel cased.</Description>
     <Url/>
-    <Resolution>Method params should be Camel Cased.</Resolution>
+    <Resolution>Alter the casing of the affected variable to be camel Case.</Resolution>
     <MessageLevel Certainty="50">Warning</MessageLevel>
     <FixCategories>NonBreaking</FixCategories>
     <Email />
     <Owner />
   </Rule>
   
-  
-    <Rule TypeName="ClassNamesShouldBePascalBased" Category="OpenGI.Namingstandards" CheckId="OGI006">
+  <Rule TypeName="ClassNamesShouldBePascalBased" Category="OpenGI.Namingstandards" CheckId="OGI006">
     <Name>Class names should be Pascal Cased.</Name>
-    <Description>Case is wrong case - correct this.</Description>
+    <Description>Open GI coding standards state that class names should be Pascal Cased.</Description>
     <Url/>
-    <Resolution>Method params should be Camel Cased.</Resolution>
+    <Resolution>Alter the casing of the affected class name to be Pascal Case.</Resolution>
     <MessageLevel Certainty="90">Warning</MessageLevel>
     <FixCategories>Breaking</FixCategories>
     <Email />
     <Owner />
   </Rule>
   
-  
-    <Rule TypeName="InterfacesShouldBePascalCasedWithLeadingI" Category="OpenGI.Namingstandards" CheckId="OGI006">
+  <Rule TypeName="InterfacesShouldBePascalCasedWithLeadingI" Category="OpenGI.Namingstandards" CheckId="OGI007">
     <Name>Interfaces should start with 'I' and be pascal cased.</Name>
-    <Description>Case is wrong case - correct this.</Description>
+    <Description>Open GI coding standards state that Interface should start with 'I'.</Description>
     <Url/>
-    <Resolution>Method params should be Camel Cased.</Resolution>
+    <Resolution>Alter the interface name to start with 'I'</Resolution>
     <MessageLevel Certainty="90">Warning</MessageLevel>
     <FixCategories>Breaking</FixCategories>
     <Email />
     <Owner />
     </Rule>
+
+  <Rule TypeName="PropertyNamesShouldbePascalCased" Category="OpenGI.Namingstandards" CheckId="OGI008">
+    <Name>Property names should be Pascal cased.</Name>
+    <Description>Open GI coding standards state that Property Names should be Pascal Cased.</Description>
+    <Url/>
+    <Resolution>Alter the casing of the affected property to be Pascal Cased.</Resolution>
+    <MessageLevel Certainty="90">Warning</MessageLevel>
+    <FixCategories>Breaking</FixCategories>
+    <Email />
+    <Owner />
+  </Rule>
   
-  
+  <Rule TypeName="FieldsMustBePrefixedWith_AndBeCamelCased" Category="OpenGI.Namingstandards" CheckId="OGI009">
+    <Name>Fields should be prefixed with '_' and be camel cased.</Name>
+    <Description>Open GI coding standards state that fields should be prefixed with '_' and be camel cased.</Description>
+    <Url/>
+    <Resolution>Alter the name of the affected field to start _ and be camel cased.</Resolution>
+    <MessageLevel Certainty="90">Warning</MessageLevel>
+    <FixCategories>Breaking</FixCategories>
+    <Email />
+    <Owner />
+  </Rule>
+
   <!-- 
   Notes for developers : 
   A Rule element can contain:

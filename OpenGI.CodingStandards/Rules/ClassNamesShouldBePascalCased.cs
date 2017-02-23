@@ -17,18 +17,14 @@ namespace OpenGI.CodingStandards.Rules
         public override ProblemCollection Check(TypeNode type)
         {
             ClassNode node = type as ClassNode;
-
-
-            string pascalMethodName = node.Name.Name.ToPascalstring();
-            if (!node.Name.Name.Equals(pascalMethodName))
+            if(node != null)
             {
-                this.Problems.Add(new Problem(this.GetResolution(), node.SourceContext));
+                string pascalMethodName = node.Name.Name.ToPascalstring();
+                if (!node.Name.Name.Equals(pascalMethodName))
+                {
+                    this.Problems.Add(new Problem(this.GetResolution(), node.SourceContext));
+                }
             }
-
-
-
- 
-
             return Problems;
         }
 
