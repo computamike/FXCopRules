@@ -4,7 +4,7 @@
   <Rule TypeName="NameSpaceIsPascalRule" Category="OpenGI.Namingstandards" CheckId="OGI001">
     <Name>Namespaces should be Pascal Cased</Name>
     <Description>OpenGI Coding standards states that Namespaces should be Pascal Cased.</Description>
-    <Url/>
+    <Url>http://ppwiki/index.php/OGI_Coding_Standards#OGI001</Url>
     <Resolution>Alter the casing of the namespace to conform to the coding standards.</Resolution>
     <MessageLevel Certainty="80">Warning</MessageLevel>
     <FixCategories>Breaking</FixCategories>
@@ -15,7 +15,7 @@
   <Rule TypeName="NamespaceShouldBeginOGIRule" Category="OpenGI.Namingstandards" CheckId="OGI002">
     <Name>Namespaces should start OpenGI.OpenTrader</Name>
     <Description>Open GI Coding standards state that namespaces should start "OpenGI.OpenTrader".</Description>
-    <Url/>
+    <Url>http://ppwiki/index.php/OGI_Coding_Standards#OGI002</Url>
     <Resolution>Alter namespace to start OpenGI.OpenTrader</Resolution>
     <MessageLevel Certainty="95">Warning</MessageLevel>
     <FixCategories>Breaking</FixCategories>
@@ -26,7 +26,7 @@
   <Rule TypeName="MethodNamesShouldBePascalCased" Category="OpenGI.Namingstandards" CheckId="OGI003">
     <Name>Method names should be Pascal Cased</Name>
     <Description>Open GI Coding standards state that method names should be Pascal Cased.</Description>
-    <Url/>
+    <Url>http://ppwiki/index.php/OGI_Coding_Standards#OGI003</Url>
     <Resolution>Alter the name of the method to be Pascal Cased.</Resolution>
     <MessageLevel Certainty="95">Warning</MessageLevel>
     <FixCategories>Breaking</FixCategories>
@@ -37,7 +37,7 @@
   <Rule TypeName="MethodParametersShouldBeCamelCased" Category="OpenGI.Namingstandards" CheckId="OGI004">
     <Name>Method parameters should be Camel Cased</Name>
     <Description>Open GI Coding standards state that method parameters should be camel Cased.</Description>
-    <Url/>
+    <Url>http://ppwiki/index.php/OGI_Coding_Standards#OGI004</Url>
     <Resolution>Alter the casing of the affected method property to be camel Case.</Resolution>
     <MessageLevel Certainty="50">Warning</MessageLevel>
     <FixCategories>NonBreaking</FixCategories>
@@ -48,7 +48,7 @@
   <Rule TypeName="LocalVarialblesShouldBeCamelCased" Category="OpenGI.Namingstandards" CheckId="OGI005">
     <Name>Local variables should be Camel Cased.</Name>
     <Description>Open GI coding standards state that local variables should be camel cased.</Description>
-    <Url/>
+    <Url>http://ppwiki/index.php/OGI_Coding_Standards#OGI005</Url>
     <Resolution>Alter the casing of the affected variable to be camel Case.</Resolution>
     <MessageLevel Certainty="50">Warning</MessageLevel>
     <FixCategories>NonBreaking</FixCategories>
@@ -59,7 +59,7 @@
   <Rule TypeName="ClassNamesShouldBePascalBased" Category="OpenGI.Namingstandards" CheckId="OGI006">
     <Name>Class names should be Pascal Cased.</Name>
     <Description>Open GI coding standards state that class names should be Pascal Cased.</Description>
-    <Url/>
+    <Url>http://ppwiki/index.php/OGI_Coding_Standards#OGI006</Url>
     <Resolution>Alter the casing of the affected class name to be Pascal Case.</Resolution>
     <MessageLevel Certainty="90">Warning</MessageLevel>
     <FixCategories>Breaking</FixCategories>
@@ -70,7 +70,7 @@
   <Rule TypeName="InterfacesShouldBePascalCasedWithLeadingI" Category="OpenGI.Namingstandards" CheckId="OGI007">
     <Name>Interfaces should start with 'I' and be pascal cased.</Name>
     <Description>Open GI coding standards state that Interface should start with 'I'.</Description>
-    <Url/>
+    <Url>http://ppwiki/index.php/OGI_Coding_Standards#OGI007</Url>
     <Resolution>Alter the interface name to start with 'I'</Resolution>
     <MessageLevel Certainty="90">Warning</MessageLevel>
     <FixCategories>Breaking</FixCategories>
@@ -81,7 +81,7 @@
   <Rule TypeName="PropertyNamesShouldbePascalCased" Category="OpenGI.Namingstandards" CheckId="OGI008">
     <Name>Property names should be Pascal cased.</Name>
     <Description>Open GI coding standards state that Property Names should be Pascal Cased.</Description>
-    <Url/>
+    <Url>http://ppwiki/index.php/OGI_Coding_Standards#OGI008</Url>
     <Resolution>Alter the casing of the affected property to be Pascal Cased.</Resolution>
     <MessageLevel Certainty="90">Warning</MessageLevel>
     <FixCategories>Breaking</FixCategories>
@@ -92,7 +92,7 @@
   <Rule TypeName="FieldsMustBePrefixedWith_AndBeCamelCased" Category="OpenGI.Namingstandards" CheckId="OGI009">
     <Name>Fields should be prefixed with '_' and be camel cased.</Name>
     <Description>Open GI coding standards state that fields should be prefixed with '_' and be camel cased.</Description>
-    <Url/>
+    <Url>http://ppwiki/index.php/OGI_Coding_Standards#OGI009</Url>
     <Resolution>Alter the name of the affected field to start _ and be camel cased.</Resolution>
     <MessageLevel Certainty="90">Warning</MessageLevel>
     <FixCategories>Breaking</FixCategories>
